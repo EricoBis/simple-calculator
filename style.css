@@ -56,7 +56,7 @@
   .btn:active {
     background-color: black;
     color: white;
-    transition-duration: 0.1s;
+    transition-duration: 0.05s;
   }
 
   #btn_delete,
