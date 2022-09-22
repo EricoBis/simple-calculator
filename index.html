@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="calculator">
+        <div class="result"><p id='p'></p></div>
+        <table>
+          <tr>
+            <td><button class="btn" id="btn_cancel" onclick="cancel()">C</button></td>
+            <td><button class="btn" id="btn_delete" onclick="cancelEntry()">CE</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" onclick="input('7')">7</button></td>
+            <td><button class="btn" onclick="input('8')">8</button></td>
+            <td><button class="btn" onclick="input('9')">9</button></td>
+            <td><button class="btn" onclick="input('+')">+</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" onclick="input('4')">4</button></td>
+            <td><button class="btn" onclick="input('5')">5</button></td>
+            <td><button class="btn" onclick="input('6')">6</button></td>
+            <td><button class="btn" onclick="input('-')">-</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" onclick="input('1')">1</button></td>
+            <td><button class="btn" onclick="input('2')">2</button></td>
+            <td><button class="btn" onclick="input('3')">3</button></td>
+            <td><button class="btn" onclick="input('*')">X</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" onclick="input('0')">0</button></td>
+            <td><button class="btn" onclick="input('.')">.</button></td>
+            <td><button class="btn" onclick="input('/')">/</button></td>
+            <td><button class="btn" id="btn_equal" onclick="result()">=</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

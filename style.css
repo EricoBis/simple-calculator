@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .background {
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgb(63, 63, 231), black);
+  }
+
+  .calculator {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.712);
+    top: 50%;
+    left: 50%;
+    color: white;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+  }
+
+  .result {
+    height: 80px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    text-align: right;
+  }
+
+  p {
+    font-size: 35px;
+    padding-right: 10px;
+    padding-top: 17px;
+  }
+
+  table {
+    padding: 10px;
+  }
+
+  .btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    margin: 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border: none;
+    font-size: larger;
+  }
+
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.678);
+  }
+
+  .btn:active {
+    background-color: black;
+    color: white;
+    transition-duration: 0.1s;
+  }
+
+  #btn_delete,
+  #btn_cancel {
+    color: orangered;
+  }
+
+  #btn_delete:active,
+  #btn_cancel:active {
+    background-color: rgb(236, 113, 69);
+    color: white;
+  }
+
+  #btn_equal {
+    background-color: rgb(63, 63, 231);
+  }
+
+  #btn_equal:active {
+    background-color: black;
+    color: rgb(63, 63, 231);
+  }
