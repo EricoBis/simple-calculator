@@ -6,44 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="script.js"></script>
     <title>Calculadora</title>
   </head>
   <body>
     <div class="background">
       <div class="calculator">
-        <div class="result"><p id='p'></p></div>
+        <div class="result">
+          <p last-operation id='lastOperation'></p>
+          <p current-operation id='currentOperation'></p>
+        </div>
         <table>
           <tr>
-            <td><button class="btn" id="btn_cancel" onclick="cancel()">C</button></td>
-            <td><button class="btn" id="btn_delete" onclick="cancelEntry()">CE</button></td>
+            <td ><button cancel-button class="btn" id="btn_cancel" >C</button></td>
+            <td><button cancel-entry-button class="btn" id="btn_delete">CE</button></td>
+            <td colspan="2"><button history-button class="btn" style="width: 126px;"><img src="./img/history.png"></button></td>
           </tr>
           <tr>
-            <td><button class="btn" onclick="input('7')">7</button></td>
-            <td><button class="btn" onclick="input('8')">8</button></td>
-            <td><button class="btn" onclick="input('9')">9</button></td>
-            <td><button class="btn" onclick="input('+')">+</button></td>
+            <td><button number-button class="btn">7</button></td>
+            <td><button number-button class="btn">8</button></td>
+            <td><button number-button class="btn">9</button></td>
+            <td><button operator-button class="btn">+</button></td>
           </tr>
           <tr>
-            <td><button class="btn" onclick="input('4')">4</button></td>
-            <td><button class="btn" onclick="input('5')">5</button></td>
-            <td><button class="btn" onclick="input('6')">6</button></td>
-            <td><button class="btn" onclick="input('-')">-</button></td>
+            <td><button number-button class="btn">4</button></td>
+            <td><button number-button class="btn">5</button></td>
+            <td><button number-button class="btn">6</button></td>
+            <td><button operator-button class="btn">-</button></td>
           </tr>
           <tr>
-            <td><button class="btn" onclick="input('1')">1</button></td>
-            <td><button class="btn" onclick="input('2')">2</button></td>
-            <td><button class="btn" onclick="input('3')">3</button></td>
-            <td><button class="btn" onclick="input('*')">X</button></td>
+            <td><button number-button class="btn">1</button></td>
+            <td><button number-button class="btn">2</button></td>
+            <td><button number-button class="btn">3</button></td>
+            <td><button operator-button class="btn">*</button></td>
           </tr>
           <tr>
-            <td><button class="btn" onclick="input('0')">0</button></td>
-            <td><button class="btn" onclick="input('.')">.</button></td>
-            <td><button class="btn" onclick="input('/')">/</button></td>
-            <td><button class="btn" id="btn_equal" onclick="result()">=</button></td>
+            <td><button number-button class="btn">.</button></td>
+            <td><button number-button class="btn">0</button></td>
+            <td><button operator-button class="btn">/</button></td>
+            <td><button equal-button class="btn" id="btn_equal">=</button></td>
           </tr>
         </table>
       </div>
     </div>
+
+    <script src="js/script.js"></script>
+
   </body>
 </html>
